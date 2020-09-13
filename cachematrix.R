@@ -19,7 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function checks if the content of the matrix has changed since it was last cached 
+## and in that case recalculates the inverse and caches it.
+## otherwise it returns the previously cached inverse
 
 cacheSolve <- function(x, ...) { 
     i <- x$get_inverse()
